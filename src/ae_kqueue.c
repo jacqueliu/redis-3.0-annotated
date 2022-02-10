@@ -38,6 +38,12 @@ typedef struct aeApiState {
     struct kevent *events;
 } aeApiState;
 
+/**
+ * @brief 增加部分解释 
+ * @param eventLoop 
+ * @return int 
+ */
+
 static int aeApiCreate(aeEventLoop *eventLoop) {
     aeApiState *state = zmalloc(sizeof(aeApiState));
 
